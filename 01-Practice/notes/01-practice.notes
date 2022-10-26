@@ -1,0 +1,29 @@
+REACT NOTES:
+
+rafce: Palabra reservada para crear las funciones y estructura básica
+de los componentes
+
+1. Destructuring:
+
+> Se usa la palabra reservada "props" en las funciones
+> Las props son valores que se pasan en las etiquetas html tipo ID o class,
+etc, pero que toman un valor cualquiera (nombe, edad, fechaNac, etc) y pueden
+ser numericos, strings, etc
+> className equivale a class de html puro, el cual no se puede usar en 
+react porque class es una palabra reservada de POO
+> Aplicar styles o estilos en react se coloca dentro de la etiqueta con 
+la palabra styles={{}}, y dentro del doble corchete
+se coloca las propiedades {{color: '', background: ''}} tomar en cuenta
+que se usa doble punto para indicar la propiedad entre comillas y 
+se separan con coma
+
+2. Components:
+
+1. Siempre se capitaliza la 1er letra del componente
+2. Para exportar: export default [Button]
+3. Para impotar: import [Button] from '[./Button]'
+
+3. Ternarios
+Se coloca && si solo tenemos un if sin else y ? si hay if/else
+4. npm run build:
+Crea la carpeta dist para el despliegue en netlify, heroku, etc
