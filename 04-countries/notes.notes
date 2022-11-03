@@ -1,0 +1,48 @@
+1. EXPORT DEFAULT VS EXPORT MODULES:
+
+- Export default ComponentName exporta todo ese archivo NOTA: al hacer el import, debe ser sin llaves i.e import ComponentName from ''
+- Export const ComponentName =()=>{} exporta por modulos, si tengo más modulos en ese archivo, puedo hacerlo de manera independiente NOTE: El import lleva {}
+i.e import {ComponentName} from ''
+- Otra forma de hacerlo por modulos, es hacerlo por objetos:
+export {ComponentName} y el import se hace import {ComponentName} from ''
+- Y por ultimo es exportarlo como: EXPORT DEFAULT FUNCTION ComponentName () {return} en lugar de declarar un const con función fecha
+
+2. AbortController:
+
+signal: enviar una señal al fetch para saber que esta recibiendo, si obtiene datos, ejecuta la API
+abort: si el resultado del fetch no es satisfactorio, aborta la petición, y también se ejecuta al desmontar el Componente 
+
+3. Componentes:
+
+common: boton, carga, inpout, imagen, enlace
+containers: componenetes grandes que contienen muchas cosas
+layout: containers más grandes que sirven para estructurar como se va ver en diferentes páginas
+docs: texto, xls, documentación, estructurar
+
+4. PASAR TODOS LOS VALORES QUE DEVUELVE DE LA API:
+
+en lugar de mandar a llamar manualmente a cada elemento (i.e { countries.name, countries.flag}, ...)  podemos optimizarlo de la siguiente manera:
+    { ...country } y colocar en los props los nombres de los valores requeridos (name y flags) y al renderizar, va buscar los que hacen match con esas props
+    y las pasará automáticamente
+
+5. Propiedad object-fit de css:
+
+Permite que la imagen se ajuste al espacio disponible sin que se estire o quede pequeña
+
+6. Propiedad lazy:
+Los elementos que se ven de entrada en la pantalla se renderizan, las demás lo haran al hacer scroll-down...no todos los navegadores lo soportan
+
+7. Desinstalar paquetes json o dependencias desde terminal con npm:
+
+npm un _________ i.e npm un react-toastify
+
+8. Instalar una dependencia sin el ^ Circumflex:
+npm i __________ -E    i.e npm i react-toastify -E
+
+9. react-toastify:
+Libreria que permite crear alertas: ver documentación
+
+010. Comandos:
+
+ctrl + space sobre la etiqueta de un componente muestra la ruta para importarla automáticamente
+ctrl + p: encontrar un archivo
