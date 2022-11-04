@@ -10,3 +10,8 @@ function App () {
 }
 
 export default App
+
+export const RenderComponent = ({
+  text
+}) => <h2>{text}</h2>;
+  

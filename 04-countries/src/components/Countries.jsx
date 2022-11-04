@@ -5,7 +5,7 @@ import Loading from './common/Loading'
 
 import { toast } from 'react-toastify'
 
-// 00:01:00 27/10/22 //
+// 00:26:26 27/10/22 //
 export const Countries = () => {
   const [countries, setCountries] = useState([])
   const [loading, setLoading] = useState(true)

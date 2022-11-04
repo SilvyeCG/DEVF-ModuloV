@@ -36,8 +36,10 @@ Los elementos que se ven de entrada en la pantalla se renderizan, las demás lo 
 
 npm un _________ i.e npm un react-toastify
 
-8. Instalar una dependencia sin el ^ Circumflex:
+8. Instalar una dependencia sin el ^ Circumflex y @version:
 npm i __________ -E    i.e npm i react-toastify -E
+
+Si requerimos la ultima versión o una en especifico: podemos colocar el @latest o @5.4 @2.4 de acuerdo a la version que queremos Instalar
 
 9. react-toastify:
 Libreria que permite crear alertas: ver documentación
