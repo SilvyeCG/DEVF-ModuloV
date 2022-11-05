@@ -6,17 +6,19 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/index.css'
 /*
 *components  */
-import { Countries } from './components/Countries'
 import 'react-toastify/dist/ReactToastify.css'
 import { ToastContainer } from 'react-toastify'
-import RoutingDoc from './docs/RoutingDocu'
+
+// Router
+import Paths from './routes/Paths'
 
 const root = document.getElementById('root')
 createRoot(root).render(
   <>
     {/* <Countries /> */}
     <BrowserRouter>
-      <RoutingDoc />
+      <Paths />
+      <ToastContainer />
     </BrowserRouter>
     {/* <ToastContainer /> */}
   </>
