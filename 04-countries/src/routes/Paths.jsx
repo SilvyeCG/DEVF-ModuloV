@@ -7,7 +7,10 @@ export default function Paths () {
     <Routes>
       <Route path='/' element={<Navigate to='/countries' />} />
       <Route path='/countries' element={<Countries />} />
-      <Route path='/country' element={<Country />} />
+      {/* los 2 puntos significan que son un valor variable => Se convierte en una URL dinámica */}
+      <Route path='/country/:idCode' element={<Country />} />
+      <Route path='/404' element={<p className='text-center text-white'>PAGE NOT FOUND</p>} />
+      <Route path='*' element={<Navigate to='/404' />} />
     </Routes>
   )
 }

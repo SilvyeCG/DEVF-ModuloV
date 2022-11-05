@@ -1,7 +1,12 @@
 body{
   background-color: rgb(34, 112, 147);
   /* color: wheat; */
+}
+
+a{
+  text-decoration: none;
   text-align: center;
+  color: brown;
 }
 
 .card-img-top{

@@ -2,7 +2,7 @@ import Card from '../components/common/Card'
 import Loading from '../components/common/Loading'
 import UseGetData from '../hooks/UseGetData'
 
-// 01:59:53 27/10/22 //
+// 00:00:00 31/10/22 //
 export const Countries = () => {
   const apiURL = 'https://restcountries.com/v3.1/all'
   const { data: countries, loading } = UseGetData(apiURL)
