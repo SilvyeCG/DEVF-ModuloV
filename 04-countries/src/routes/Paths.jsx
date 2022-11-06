@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { RenderComponent } from '../components/common/RenderComponent'
+import Form from '../docs/Form'
 import Countries from '../pages/Countries'
 import Country from '../pages/Country'
 
@@ -12,6 +13,8 @@ export default function Paths () {
       <Route path='/country/:idCode' element={<Country />} />
       <Route path='/404' element={<RenderComponent text='Page not found' />} />
       <Route path='*' element={<Navigate to='/404' />} />
+      {/* Docs */}
+      <Route path='/form' element={<Form />} />
     </Routes>
   )
 }

@@ -15,7 +15,12 @@ export const Countries = () => {
       <Helmet prioritizeSeoTags>
         <title>Countries API</title>
       </Helmet>
+      {/* <section>
+      </section> */}
       <section className='container py-5'>
+        <form className='mb-4'>
+          <input className='form-control' type='text' placeholder='Search...' />
+        </form>
         <div className='row gy-4'>
           {countries.map((country, index) => (
             <div key={index} className='col-12 col-md-6 col-lg-3'>
