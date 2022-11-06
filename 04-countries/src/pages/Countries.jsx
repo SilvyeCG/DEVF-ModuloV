@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async'
 import Card from '../components/common/Card'
 import Loading from '../components/common/Loading'
 import UseGetData from '../hooks/UseGetData'
@@ -11,6 +12,9 @@ export const Countries = () => {
 
   return (
     <>
+      <Helmet prioritizeSeoTags>
+        <title>Countries API</title>
+      </Helmet>
       <section className='container py-5'>
         <div className='row gy-4'>
           {countries.map((country, index) => (

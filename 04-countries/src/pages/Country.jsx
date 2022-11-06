@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async'
-import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useParams } from 'react-router-dom'
 import Loading from '../components/common/Loading'
 import UseGetData from '../hooks/UseGetData'
 
