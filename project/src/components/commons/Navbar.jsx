@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import Form from './Form'
 
 export default function Navbar () {
@@ -5,9 +6,9 @@ export default function Navbar () {
     <div>
       <nav className='navbar navbar-expand-lg navbar-dark bg-primary'>
         <div className='container-fluid'>
-          <a className='navbar-brand' href='#'>
+          <NavLink className='navbar-brand' to='/home'>
             Kenti Cinema
-          </a>
+          </NavLink>
           <button
             className='navbar-toggler'
             type='button'
@@ -22,15 +23,15 @@ export default function Navbar () {
           <div className='collapse navbar-collapse' id='navbarColor01'>
             <ul className='navbar-nav me-auto'>
               <li className='nav-item'>
-                <a className='nav-link active' href='#'>
+                <NavLink className='nav-link active' to='/home'>
                   Home
                   <span className='visually-hidden'>(current)</span>
-                </a>
+                </NavLink>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='#'>
+                <NavLink className='nav-link' to='/doc'>
                   Documentation
-                </a>
+                </NavLink>
               </li>
             </ul>
             <Form />

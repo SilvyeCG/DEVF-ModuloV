@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 
 export default function Menu () {
+  
   return (
     <menu className='d-flex justify-content-center'>
       <NavLink to='/main' className='nav-link m-4'>Main</NavLink>
