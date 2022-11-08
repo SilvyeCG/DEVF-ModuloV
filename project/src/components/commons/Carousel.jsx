@@ -8,10 +8,10 @@ const Carousel = () => {
       >
         <div className='carousel-inner'>
           <div className='carousel-item active' data-bs-interval={10000}>
-            <img src='../../assets/logo.png' className='d-block w-100' alt='...' />
+            <img src='../../assets/logo.png' className='d-block w-100 img-fluid' alt='...' />
           </div>
           <div className='carousel-item' data-bs-interval={2000}>
-            <img src='../../assets/promotion.png' className='d-block w-100' alt='...' />
+            <img src='../../assets/promotion.png' className='d-block w-100 img-fluid' alt='...' />
           </div>
         </div>
         <button

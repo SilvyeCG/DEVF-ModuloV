@@ -9,6 +9,11 @@ const Documentation = () => {
       <div className='container'>
         <h2 className='text-white text-center mt-4 pt-5'>TVMaze Documentation</h2>
         <div className='row'>
+          <p className='text-center mt-4'>
+            <img className='img-fluid' id='tvmazeLogo' src='../../public/assets/tvmaze.png' alt='tvmaze-logo' />
+          </p>
+        </div>
+        <div className='row'>
           <div className='col'>
             <p className='mt-5 fs-3 text-center'>TV Maze
               is a free user driven TV database curated by TV lovers all over
