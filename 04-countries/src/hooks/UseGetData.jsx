@@ -11,15 +11,7 @@ export default function UseGetData (url) {
   const getData = async () => {
     try {
       const req = await Fetcher({ url })
-      // const req = await fetch(apiURL)
-      // req.ok && setData(await req.json())
-      // !req.ok && setError(req.statusText)
-      // const req = await fetch(apiURL, { signal })
-      // const res = req.status === 200 ? await req.json() : []
       setData(req)
-      // console.log(res)
-      // const res = await req.status === 200 ? req.json() : []
-      // console.log(res)
     } catch (error) {
       setError(String(error))
     } finally {
