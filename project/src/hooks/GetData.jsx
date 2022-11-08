@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react"
-import { toast } from "react-toastify"
+import { useEffect, useState } from 'react'
+import { toast } from 'react-toastify'
 
 export default function GetData (urlApi) {
   const [res, setRes] = useState([])

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Series from '../../Series'
+import { getApiUrl } from '../../utils/config'
 export default function Form () {
   const [searchTerm, setSearchTerm] = useState('')
 

@@ -1,4 +1,4 @@
-import Form from "./Form";
+import Form from './Form'
 
 export default function Navbar () {
   return (
@@ -6,7 +6,7 @@ export default function Navbar () {
       <nav className='navbar navbar-expand-lg navbar-dark bg-primary'>
         <div className='container-fluid'>
           <a className='navbar-brand' href='#'>
-            Navbar
+            Kenti Cinema
           </a>
           <button
             className='navbar-toggler'
@@ -25,11 +25,6 @@ export default function Navbar () {
                 <a className='nav-link active' href='#'>
                   Home
                   <span className='visually-hidden'>(current)</span>
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link' href='#'>
-                  About
                 </a>
               </li>
               <li className='nav-item'>
