@@ -1,5 +1,3 @@
-import Form from '../Form'
-
 const Navbar = () => {
   return (
     <div>
@@ -33,7 +31,6 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            <Form />
           </div>
         </div>
       </nav>

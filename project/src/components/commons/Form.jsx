@@ -10,7 +10,7 @@ export default function Form () {
     const apiUrl = baseURL + searchTerm
     Config(apiUrl)
   }
-
+ 
   return (
     <>
       <div>
