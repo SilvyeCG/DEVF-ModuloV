@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
 const Form = ({ getQuery }) => {
-  const { query: querySearch, setQuery: setQuerySearch } = useState()
+  const [querySearch, setQuerySearch] = useState('')
 
   const handleChange = (getData) => {
-    console.log("Here", getData)
+    console.log(getData)
     setQuerySearch(getData)
     getQuery(getData)
   }
@@ -13,15 +13,12 @@ const Form = ({ getQuery }) => {
     <div className='formSearch'>
       <form className='d-flex' abineguid='1B78BAA4F3D74319AA193B30F386BD92'>
         <input
-          className='form-control me-sm-2'
+          className='form-control me-sm-2 fs-3'
           type='text'
           placeholder='Search...'
           value={querySearch}
           onChange={(e) => handleChange(e.target.value)}
         />
-        {/* <button className='btn btn-danger my-2 my-sm-0' type='submit'>
-          Search
-        </button> */}
       </form>
     </div>
   )

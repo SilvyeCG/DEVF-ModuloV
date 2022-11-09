@@ -3,14 +3,17 @@ import axios from 'axios'
 import Logo from './Components/Commons/Logo'
 import Navbar from './Components/Commons/Navbar'
 import Form from './Components/Form'
+import CardShow from './Components/Commons/CardShow'
 
 function App () {
+
   const [shows, setShows] = useState([])
   const [query, setQuery] = useState('')
 
   const getShowsQuery = async () => {
-    const response = await axios(` https://api.tvmaze.com${query}`)
+    const response = await axios(` https://api.tvmaze.com/search/shows?q=${query}`)
     console.log(response.data)
+    setShows(response.data)
   }
 
   useEffect(() => {
@@ -22,7 +25,8 @@ function App () {
         <Navbar />
         <Logo />
       </div>
-      <Form />
+      <Form getQuery={(q) => setQuery(q)} />
+      <CardShow shows={shows} />
     </>
   )
 }
