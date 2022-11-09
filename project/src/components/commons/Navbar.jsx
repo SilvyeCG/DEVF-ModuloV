@@ -34,7 +34,8 @@ export default function Navbar () {
                 </NavLink>
               </li>
             </ul>
-            <Form />
+            <Form /> 
+  
           </div>
         </div>
       </nav>
