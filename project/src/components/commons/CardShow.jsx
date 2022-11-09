@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CardShow = ({ ...args }) => {
+const CardShow = ({ ...args }) => { 
   return (
     <div>
       <div>

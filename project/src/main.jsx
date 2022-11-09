@@ -7,7 +7,6 @@ import Paths from './routes/Paths'
 const root = document.getElementById('root')
 createRoot(root).render(
   <>
-    {/* <Home /> */}
     <BrowserRouter>
       <Paths />
     </BrowserRouter>

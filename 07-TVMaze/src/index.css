@@ -1,3 +1,8 @@
 #logoImage {
     max-width: 50%;
 }
+
+#showsResultsImg {
+    height: 35rem;
+    object-fit: cover 
+}
