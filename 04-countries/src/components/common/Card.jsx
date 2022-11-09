@@ -4,6 +4,7 @@ import toLowerCase from '../../utils/toLowerCase'
 export default function Card ({ name = '', flags = '', cca3 = '' }) {
   const toLowerCca3 = toLowerCase(cca3)
   return (
+
     <Link className='card' to={`/country/${toLowerCca3}`}>
       <img
         src={flags.svg}
