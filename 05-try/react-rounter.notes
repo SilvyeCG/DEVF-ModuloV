@@ -1,0 +1,11 @@
+Controlar las rutas o URL
+
+React por defecto no puede controlar las rutas, por lo que se requiere una libreria (react router) que es el mas utilizado y es creado por remix quien es casi 
+casi la competencia directa de react
+
+React al no tener un enrutador, solo pueden hacerse landing pageS Y AL SER UNA BILBIOTECA Y NO TENER UN ENRUTADOR se requiere react router
+
+Se dice que react es una SPA (single page application)
+
+react-router-dom => react
+react-router => react-native

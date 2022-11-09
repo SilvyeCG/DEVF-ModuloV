@@ -3,6 +3,7 @@ import { toast } from 'react-toastify'
 import CardShow from '../components/commons/CardShow'
 import Loading from '../components/commons/Loading'
 import Navbar from '../components/commons/Navbar'
+import GetData from '../hooks/GetData'
 
 function Series () {
   const urlApi = `https://api.tvmaze.com/search/shows?q=csi`

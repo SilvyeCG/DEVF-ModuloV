@@ -1,17 +1,20 @@
 import { useState } from 'react'
-import { getApiUrl } from '../../utils/config'
+import Config from '../../utils/Config'
+
 export default function Form () {
   const [searchTerm, setSearchTerm] = useState('')
 
-  const onSearchHandler = (e) => {
+  const baseURL = 'https://api.tvmaze.com/search/shows?q='
+  const handleChange = (e) => {
     e.preventDefault()
-    console.log(searchTerm)
+    const apiUrl = baseURL + searchTerm
+    Config(apiUrl)
   }
 
   return (
     <>
       <div>
-        <form className='d-flex'>
+        <form className='d-flex' onSubmit={handleChange}>
           <input
             className='form-control me-sm-2'
             type='text'
@@ -22,7 +25,6 @@ export default function Form () {
           <button
             className='btn btn-secondary my-2 my-sm-0'
             type='submit'
-            onClick={onSearchHandler}
           >
             Search
           </button>

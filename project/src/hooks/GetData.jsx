@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import { toast } from 'react-toastify'
 
-export default function GetData (urlApi) {
+export default function GetData ({ urlApi }) {
   const [res, setRes] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState()
 
-  const getData = async () => {
+  const getDataQuery = async () => {
     try {
       const request = await fetch(urlApi)
       const response = await request.json()
@@ -19,8 +19,8 @@ export default function GetData (urlApi) {
   }
 
   useEffect(() => {
-    getData()
-  }, [])
+    getDataQuery()
+  }, [urlApi])
 
   console.log(res)
 
