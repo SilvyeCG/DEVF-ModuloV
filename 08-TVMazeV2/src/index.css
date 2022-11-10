@@ -16,3 +16,25 @@
 #imgShow {
     max-width: 70%;
 }
+
+#btn-error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#btn-error > #btn-error-home {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    text-decoration: none;
+    border: 1px solid #dc3545;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+
+}
+
+#btn-error > #btn-error-home:hover {
+    background-color: #dc3545;;
+}

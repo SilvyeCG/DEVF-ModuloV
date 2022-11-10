@@ -2,6 +2,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import Characters from '../Components/Commons/Characters'
+import Seasons from '../Components/Commons/Seasons'
 import Navbar from '../Layouts/Navbar'
 // col-12 col-md-6 col-lg-4
 const Show = () => {
@@ -52,7 +53,10 @@ const Show = () => {
                 <Characters id={id} />
               </div>
               <div className='col ms-3'>
-                <h1 className='fs-2 text-danger mb-4'>Seasons</h1>
+                <h1 className='text-danger mb-4'>Seasons</h1>
+                <div className='accordion accordion-flush' id='accordionFlushExample'>
+                  <Seasons id={id} />
+                </div>
               </div>
             </div>
           </div>

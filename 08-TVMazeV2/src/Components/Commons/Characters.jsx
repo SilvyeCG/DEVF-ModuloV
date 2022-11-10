@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
-const Characters = ({id}) => {
+const Characters = ({ id }) => {
   const apiUrl = `https://api.tvmaze.com/shows/${id}/cast`
 
   const [characters, setCharacter] = useState([])
