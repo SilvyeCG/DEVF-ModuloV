@@ -4,15 +4,20 @@ import axios from 'axios'
 import Logo from './Components/Commons/Logo'
 import Navbar from './Layouts/Navbar'
 import Form from './Components/Commons/Form'
+import Loading from './Components/Commons/Loading'
+// import useGetData from './Hooks/useGetData'
 
 function App () {
+  const apiUrl = 'https://api.tvmaze.com/search/shows?q='
   const [shows, setShows] = useState([])
   const [query, setQuery] = useState('')
+  const [loading, setLoading] = useState(true)
 
   const getShowsQuery = async () => {
-    const response = await axios(`https://api.tvmaze.com/search/shows?q=${query}`)
+    const response = await axios(`${apiUrl}${query}`)
     if (response.status === 200) {
       setShows(response.data)
+      setLoading(false)
     }
   }
 
@@ -20,7 +25,10 @@ function App () {
     getShowsQuery()
   }, [query])
 
-  console.log('here', shows)
+  console.log('here it is', shows)
+
+  if (loading) return <Loading />
+
   return (
     <>
       <div className='header'>
@@ -32,7 +40,8 @@ function App () {
         <div className='row gy-4'>
           {shows.map((show, index) => (
             <div key={index} className='col-12 col-md-6 col-lg-4'>
-              <Link className='card mb-3' id='showsResultsImg'>
+              {/* <CardShows {...show} /> */}
+              <Link className='card mb-3' id='showsResultsImg' to={`/show/${show.show.id}`}>
                 <img src={show.show.image.original} className='card-img-top' alt={show.show.name} />
               </Link>
             </div>
@@ -42,5 +51,4 @@ function App () {
     </>
   )
 }
-
 export default App

@@ -9,9 +9,9 @@ const Paths = () => {
       <Route path='/' element={<Navigate to='/home' replace />} />
       <Route path='/home' element={<App />} />
       <Route path='/doc' element={<Documentation />} />
-      <Route path='/show' element={<Show />} />
+      <Route path='/show/:id' element={<Show />} />
+      <Route path='/404' element={<Error />} />
     </Routes>
   )
 }
-
 export default Paths
